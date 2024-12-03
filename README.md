@@ -1,6 +1,6 @@
 # Biblioteca IES Luis Vives
 
-Este proyecto es una aplicación de gestión de bibliotecas, desarrollada en Kotlin, que permite gestionar y visualizar la información de una biblioteca. En este caso, se ha configurado para la "Biblioteca IES Luis Vives" en Leganés.
+Este proyecto es una aplicación de gestión de bibliotecas, que permite gestionar y visualizar la información de una biblioteca. En este caso, se ha configurado para la "Biblioteca IES Luis Vives" en Leganés.
 
 ## Estructura del Proyecto
 
