@@ -13,7 +13,6 @@ fun main() {
         id = Biblioteca.getNextId(),
         nombre = "Biblioteca IES Luis Vives",
         ciudad = "Leganes",
-        telefono = "987654321",
     )
 
     val view = View(biblioteca)
