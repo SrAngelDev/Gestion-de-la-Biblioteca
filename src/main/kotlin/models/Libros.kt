@@ -10,7 +10,7 @@ data class Libros(
     val anioPublicacion: Int,
     val createdAt: LocalDateTime = LocalDateTime.now(),
     val updatedAt: LocalDateTime = LocalDateTime.now(),
-    val isReserved: Boolean = false,
+    val isAvailable: Boolean = true,
 ) {
     override fun toString(): String {
         return ("Libro(id=$id, titulo='$titulo', autor='$autor', genero='$genero', anioPublicacion=$anioPublicacion, createdAt=$createdAt, updatedAt=$updatedAt)")
@@ -20,9 +20,6 @@ data class Libros(
         private var nextId = 1
         fun getNextId(): Int = nextId++
     }
-
-    val isAvailable: Boolean
-        get() = isReserved == false
 
     enum class Genero {
         LITERATURA,
