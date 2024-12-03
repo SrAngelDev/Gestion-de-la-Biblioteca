@@ -32,7 +32,7 @@ class View(
         var opcionElegida = -1
 
         do {
-            println(color.yellow("\nMenú de Gestión de la Biblioteca:"))
+            println(color.yellow("\nMenú Gestión de la Biblioteca:"))
             println(color.yellow("1. Obtener todos los libros"))
             println(color.yellow("2. Buscar libro por ID"))
             println(color.yellow("3. Crear libro"))
@@ -244,6 +244,7 @@ class View(
     /**
      * Funcion para crear el libro en el menu.
      * @return Libro creado.
+     * @throws Exception si no puede crear el libro.
      */
     private fun crearLibro() {
         logger.debug{ "Creando libro" }

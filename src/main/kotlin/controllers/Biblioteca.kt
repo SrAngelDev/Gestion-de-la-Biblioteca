@@ -13,7 +13,6 @@ const val MAX_LIBROS = 1000
  * @property id Identificador único de la biblioteca.
  * @property nombre Nombre de la biblioteca.
  * @property ciudad Ciudad donde se encuentra la biblioteca.
- * @property telefono Teléfono de contacto de la biblioteca.
  */
 class Biblioteca(
     val id: Int = NEW_ID,
@@ -41,7 +40,7 @@ class Biblioteca(
     }
 
     /**
-     * Elimina los nulos de la lista de libros.
+     * Obtiene los libros del array sin nulos.
      *
      * @return Array de libros sin nulos.
      */
@@ -62,7 +61,8 @@ class Biblioteca(
      * Busca un libro por su ID.
      *
      * @param id ID del libro a buscar.
-     * @return El libro encontrado o una excepción si no se encuentra.
+     * @return El libro encontrado.
+     * @throws Exception si no encuentra el libro.
      */
     fun findById(id: Int): Libros? {
         logger.debug { "Buscando libro por ID: $id" }
@@ -100,7 +100,8 @@ class Biblioteca(
      *
      * @param id ID del libro a actualizar.
      * @param libro Datos del libro a actualizar.
-     * @return El libro actualizado o una excepción si no se encuentra.
+     * @return El libro actualizado.
+     * @throws Exception si no se encuentra el libro.
      */
     fun update(id: Int, libro: Libros?): Libros? {
         logger.debug { "Actualizando libro con ID: $id en la biblioteca $nombre" }
@@ -123,7 +124,8 @@ class Biblioteca(
      * Elimina un libro de la biblioteca.
      *
      * @param id ID del libro a eliminar.
-     * @return El libro eliminado o una excepción si no se encuentra.
+     * @return El libro eliminado.
+     * @throws Exception si no se encuentra el libro.
      */
     fun delete(id: Int): Libros? {
         logger.debug { "Eliminando libro con ID: $id en la biblioteca $nombre" }

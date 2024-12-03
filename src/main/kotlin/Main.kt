@@ -8,6 +8,10 @@ import srangeldev.views.View
 
 private val logger = logging()
 
+/**
+ * Función principal que inicializa la biblioteca y muestra el menú de gestión.
+ * @author Angel Sanchez Gasanz
+ */
 fun main() {
     val biblioteca = Biblioteca(
         id = Biblioteca.getNextId(),
