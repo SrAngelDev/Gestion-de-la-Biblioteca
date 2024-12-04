@@ -39,5 +39,5 @@ tasks.jar {
         from(zipTree(file.absoluteFile))
     }
     duplicatesStrategy = DuplicatesStrategy.INCLUDE
-    archiveFileName.set("gestion-biblioteca.jar")
+    archiveFileName.set("gestion-biblioteca-luisvives.jar")
 }
