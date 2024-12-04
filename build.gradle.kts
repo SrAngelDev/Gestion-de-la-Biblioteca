@@ -32,7 +32,7 @@ kotlin {
 // Jar
 tasks.jar {
     manifest {
-        attributes["Main-Class"] = "dev.joseluisgs.MainKt"
+        attributes["Main-Class"] = "srangeldev.MainKt"
     }
     // Copia de las librerías a la carpeta lib
     configurations["compileClasspath"].forEach { file: File ->
